@@ -1,4 +1,4 @@
-# 📱 Interface de Reconexão WhatsApp (UAZAPI / Evolution v2)
+# 📱 Interface de Reconexão WhatsApp (UAZAPI)
 
 Uma interface **standalone** (arquivo único) para facilitar a reconexão de instâncias do WhatsApp. Desenvolvida para que gestores de tráfego e automação possam enviar um link seguro para seus clientes escanearem o QR Code, sem precisar acessar painéis administrativos complexos.
 
@@ -12,7 +12,7 @@ Uma interface **standalone** (arquivo único) para facilitar a reconexão de ins
 * 🔄 **Auto-Refresh Inteligente:** O QR Code atualiza a cada 30s e o status é verificado a cada 3s.
 * 📱 **Responsivo:** Funciona perfeitamente em Celulares e Desktop.
 * ✅ **Feedback Visual:** Avisa automaticamente quando o WhatsApp conecta.
-* 🛠️ **Compatibilidade:** Otimizado para **UAZAPI (uazapiGO)** e forks da Evolution API v2 que usam `POST /instance/connect`.
+* 🛠️ **Compatibilidade:** Otimizado para **UAZAPI (uazapiGO)**.
 
 ## ⚙️ Como Usar
 
@@ -55,12 +55,13 @@ Sem isso, o navegador bloqueará a conexão e o QR Code não aparecerá.
 
 
 🛠️ Detalhes Técnicos (Para Devs)
-O script utiliza a seguinte lógica para compatibilidade com UAZAPI v2:
+O script utiliza a seguinte lógica para compatibilidade com UAZAPI:
 
 Endpoint: POST /instance/connect (Payload vazio {})
 
 Auth: Header token (Em vez de apikey)
 
 Polling: Verifica status em GET /instance/status
+
 
 Desenvolvido por Gabriel Moraes Contribuições são bem-vindas!
