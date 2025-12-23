@@ -45,7 +45,6 @@ Se você hospedar este arquivo em um domínio diferente da sua API (ex: o site e
 
 No arquivo `.env` da sua UAZAPI/Evolution:
 
-```bash
 # Permitir qualquer origem (Mais fácil)
 CORS_ORIGIN=*
 
@@ -65,3 +64,4 @@ Polling: Verifica status em GET /instance/status
 
 
 Desenvolvido por Gabriel Moraes Contribuições são bem-vindas!
+
