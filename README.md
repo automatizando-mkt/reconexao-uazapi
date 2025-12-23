@@ -39,20 +39,6 @@ Você pode hospedar este arquivo em qualquer lugar que suporte HTML estático:
 * Hospedagem cPanel / Hostgator (Gerenciador de Arquivos)
 * WordPress (Via FTP na raiz)
 
-## ⚠️ Requisito Importante: CORS
-
-Se você hospedar este arquivo em um domínio diferente da sua API (ex: o site está na Vercel e a API na sua VPS), você **PRECISA** liberar o CORS na sua API.
-
-No arquivo `.env` da sua UAZAPI/Evolution:
-
-# Permitir qualquer origem (Mais fácil)
-CORS_ORIGIN=*
-
-# OU permitir apenas seu domínio (Mais seguro)
-CORS_ORIGIN=[https://seu-site-de-reconexao.vercel.app](https://seu-site-de-reconexao.vercel.app),[https://outro-dominio.com](https://outro-dominio.com)
-Sem isso, o navegador bloqueará a conexão e o QR Code não aparecerá.
-
-
 🛠️ Detalhes Técnicos (Para Devs)
 O script utiliza a seguinte lógica para compatibilidade com UAZAPI:
 
@@ -64,4 +50,5 @@ Polling: Verifica status em GET /instance/status
 
 
 Desenvolvido por Gabriel Moraes Contribuições são bem-vindas!
+
 
